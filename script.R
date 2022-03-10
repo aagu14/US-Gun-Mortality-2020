@@ -1,3 +1,11 @@
+#Install and run required packages#
+install.packages("car")
+library(car)
+
+install.packages("stargazer")
+library(stargazer)
+
+
 #Import data#
 GunLawsRankedByState = read.csv("laws.csv")
 statesdata = read.csv("statesdata.csv")
@@ -40,16 +48,11 @@ summary(R2)
 
 #Check for multicollinearity#
 ##Calculate the variance inflation factors of independent variables##
-install.packages("car")
-library(car)
 vif(R2)
 
 
-##Use stargazer package to report results##
-install.packages("stargazer")
-library(stargazer)
+##Use stargazer to report results##
 models = list(R1, R2)
-
 stargazer(models, 
           title = "Association between firearm mortality and gun legistlation", 
           type = "text")
