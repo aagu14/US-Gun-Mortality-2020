@@ -20,7 +20,7 @@ How to run R script:
 3. Set working directory in RStudio. 
    >setwd("~/{file path}/data sets")
 
-4. Install "car" and "stargazer" packages in RStudio before running code.
+4. Install "car" and "stargazer" packages before running code.
    >install.packages("car")           >install.packages("stargazer")  
    >library(car)                      >library(stargazer)
 
