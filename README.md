@@ -8,11 +8,11 @@ Description:
 >Due to time constraints, sample size was restricted to n=50 to analyze data between just states. Study was still statistically significant with little multicollinearity between independent variables (VIF < 5). In the future, I hope to perform a more in-depth study that includes cities/zip codes.
 
 How to install and run RStudio:
-1. download and install the latest version of R
+1. Download and install the latest version of R
    >Windows: https://cran.r-project.org/
    >macOS : https://cran.r-project.org/bin/macosx/
 
-2. download and install the latest version of RStudio Desktop (Windows, macOS, Linux) 
+2. Download and install the latest version of RStudio Desktop (Windows, macOS, Linux) 
    >https://www.rstudio.com/products/rstudio/download/
 
 How to run R script:
