@@ -15,7 +15,7 @@ How to install and run RStudio:
    >https://www.rstudio.com/products/rstudio/download/
 
 How to run R script:
-1. Download files under "data sets" from this repository.
+1. Download all files under "data sets" from this repository.
 2. Run RStudio.
 3. Set working directory in RStudio. 
    >setwd("~/{file path}/data sets")
