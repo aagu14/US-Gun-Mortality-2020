@@ -20,9 +20,5 @@ How to run R script:
 3. Set working directory in RStudio. 
    >setwd("~/{file path}/data sets")
 
-4. Install "car" and "stargazer" packages before running code.
-   >install.packages("car")           >install.packages("stargazer")  
-   >library(car)                      >library(stargazer)
-
-5. Copy and paste the code from "script.R" onto a new script in RStudio. 
-6. Run the script
+4. Copy and paste the code from "script.R" onto a new script in RStudio. 
+5. Run the script
