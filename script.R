@@ -4,7 +4,7 @@ statesdata = read.csv("statesdata.csv")
 StatesGunData = cbind(statesdata, GunLawsRankedByState)
 
 
-##Import Control variables##
+#Import Control variables#
 GDPPerCapita = read.csv("usincome.csv")
 
 ViolentCrimeRate = read.csv("crime.csv")
@@ -19,10 +19,12 @@ AffordableHousingShortage = read.csv("AffordableHousingShortage.csv")
 
 SpendingPerStudent = read.csv("PublicEducationSpending.csv")
 
-##Merge data frame to include control variables##
+
+#Merge data frame to include control variables#
 USGunData = cbind(StatesGunData, GDPPerCapita, ViolentCrimeRate, OpoidsPrescribedPerCapita, 
                   EthanolConsumptionPerCapita, PercentageAA,
                   AffordableHousingShortage, SpendingPerStudent)
+
 
 #Regression1 without control variables#
 R1 = lm(GunDeathsPerCapita ~ GunLawRanking, data = USGunData)
@@ -33,14 +35,15 @@ R2 = lm(GunDeathsPerCapita ~ GunLawRanking + EthanolConsumptionPerCapita
         + OpoidsPrescribedPerCapita + AffordableHousingShortage
         + SpendingPerStudent + ViolentCrimeRate
         + PercentageAA + GDPPerCapita, data = USGunData)
-
 summary(R2)
 
-##Check for multicollinearity##
+
+#Check for multicollinearity#
 ##Calculate the variance inflation factors of independent variables##
 install.packages("car")
 library(car)
 vif(R2)
+
 
 ##Use stargazer package to report results##
 install.packages("stargazer")
@@ -51,6 +54,7 @@ stargazer(models,
           title = "Association between firearm mortality and gun legistlation", 
           type = "text")
 
-##Copy and paste the respective outputs below into latex editor for pdf results##
+
+##Copy and paste the respective outputs into latex editor for pdf results##
 stargazer(R1)
 stargazer(R2)
