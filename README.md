@@ -32,7 +32,7 @@ How to run R script:
                                                                         
                                                                         
                                                                         
-                                                                        REFERENCES
+                                                             REFERENCES
 
 Ausman, J., Faria, M. (2019). Is gun control really about people control? Surgery Neurology International, 10(195), 1-13.
 BEA. (2021). Personal Income by State. Bureau of Economic Analysis. 
