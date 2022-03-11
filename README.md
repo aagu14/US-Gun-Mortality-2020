@@ -21,5 +21,5 @@ How to run R script:
 3. Set working directory in RStudio. 
    >setwd("~/{file path}/data sets")
 
-4. Copy and paste the code from "script.R" onto a new script in RStudio. 
-5. Run the script
+4. Run the code from "script.R" onto a new script in RStudio. 
+
